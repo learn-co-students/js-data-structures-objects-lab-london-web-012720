@@ -1,10 +1,15 @@
 // Write your solution in this file!
-const driver = {}; // this creates object of driver 
+const driver = {name: 'bruno'}; // this creates object of driver 
 
-
+console.log(updateDriverWithKeyAndValue(driver, "age", 21))
+console.log(destructivelyDeleteFromDriverByKey(driver, "name"))
+console.log(deleteFromDriverByKey(driver, "name"))
+console.log(destructivelyUpdateDriverWithKeyAndValue(driver, "age", 25))
 
 function updateDriverWithKeyAndValue(driver, key, value) {
+ 
     return Object.assign({}, driver, {[key]: value})
+     
     // using Object.assign and passing in empty object so it does not modify the original object 
 }
 
